@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tipp-Master</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Tipp-Master</h1>
+    <div id="startArea">
+      <p>Wähle eine Schwierigkeitsstufe:</p>
+      <select id="difficulty">
+        <option value="easy">Einfach</option>
+        <option value="medium">Mittel</option>
+        <option value="hard">Schwierig</option>
+      </select>
+      <button id="startButton">Starten</button>
+    </div>
+    <div id="gameArea" class="hidden">
+      <p id="textToType"></p>
+      <textarea id="userInput" placeholder="Tippe hier..." autofocus></textarea>
+    </div>
+    <div id="results" class="hidden">
+      <p>Fehler: <span id="errors"></span></p>
+      <p>Zeit: <span id="timeTaken"></span> Sekunden</p>
+      <canvas id="resultsChart"></canvas>
+      <button id="restartButton">Noch einmal spielen</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

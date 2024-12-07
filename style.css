@@ -1,0 +1,125 @@
+/* Allgemeine Einstellungen */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #222;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* Versteckt nicht benötigte Bereiche */
+.hidden {
+  display: none;
+}
+
+/* Überschrift */
+h1, h2 {
+  margin-bottom: 20px;
+}
+
+/* Container für Dropdown */
+.select-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Dropdown-Styling */
+#difficulty {
+  appearance: none; /* Standard-Styling entfernen */
+  background-color: #444;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+  width: 200px;
+  text-align: center;
+}
+
+/* Pfeil entfernen (für spezifische Browser) */
+#difficulty::-ms-expand {
+  display: none;
+}
+
+#difficulty:hover {
+  background-color: #555;
+  border-color: #aaa;
+}
+
+#difficulty:focus {
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+/* Buttons */
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Abtipptext */
+.text-output {
+  margin: 20px 0;
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: 80%;
+  word-wrap: break-word;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+/* Eingabefeld */
+#userInput {
+  width: 80%;
+  max-width: 600px;
+  padding: 10px;
+  font-size: 18px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  outline: none;
+  background-color: #333;
+  color: #fff;
+  margin: 0 auto;
+  display: block;
+  text-align: left;
+}
+
+#userInput:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Ergebnisse */
+#results {
+  margin-top: 30px;
+}
+
+/* Diagramm */
+canvas {
+  margin: 20px auto;
+  display: block;
+}
